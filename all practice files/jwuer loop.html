@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-4.2.1-dist/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    <script src="./jquery/jquery-3.5.1.min.js"></script>
+    <script src="./bootstrap-4.2.1-dist/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="text-center">Apptech learning</h1>
+                <p class="text-justify" id="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique praesentium officiis fugiat, illo nemo corporis omnis eligendi aliquam, eius, veritatis in reiciendis exercitationem quam? Similique hic amet nesciunt laudantium distinctio.</p>
+            </div>
+            <div class="col-md-6">
+                <h3></h3>
+            </div>
+        </div>
+
+    </div> -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="text-center">Apptech Learning</h1>
+                <p class="text-justify" id="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, repellat. Ut accusamus vitae hic. Facere cupiditate fuga necessitatibus consectetur, atque deserunt itaque quisquam minima temporibus eum ipsa suscipit omnis dignissimos?</p>
+            </div>
+            <div class="col-md-6">
+                <h3></h3>
+            </div>
+        </div>
+    </div>
+    <script>
+//         $(document).ready(function(){
+//             $("p").css({"color":"red","font-size":"25px", "line-height":"38px"});
+            
+//             var jsonObj = [
+//                 {
+//                     "name": "areeb",
+//                     "email": "areebrehan",
+//                     "qualification" : "12",
+//                 },
+//                 {
+//                     "name":"hamza",
+//                     "email": " hamza shabaz",
+//                     "qualification": "matric",
+//                 }
+//             ];
+//  var abc= "";
+//  $.each(jsonObj,function(k,v){
+//     abc +="name :"  + "  " + v.name+  "<br>"; 
+//     abc += "email :" + "  " +v.email + "<br>";
+//     abc += "qualification :"+ "  " + v.qualification + "<br>";
+//  });
+
+//  $("h3").html(abc);
+                
+//         });
+
+$(document).ready(function(){
+    $("p").css({"color" : "red","line-height":"28px"});
+
+    var jsonObj = [
+        {"name":"areeb",
+        "email" : "areebrehan123",
+        "qualification": "enter"
+    },
+    {
+        "name" : "hamza",
+        "email" : "hamza@gmail.com",
+        "qualification" : "matric"  
+     }
+    ];
+
+    var abc = " ";
+    $.each(jsonObj,function(k,v){
+        abc += "name :" + v.name + " <br>";
+        abc += "email :" + v.email + "<br>";
+        abc += "qualification :" + v.qualification;
+    });
+    $("h3").html(abc);
+});
+
+    </script>
+</body>
+</html>

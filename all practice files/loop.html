@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-4.2.1-dist/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script src="./bootstrap-4.2.1-dist/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+
+            <!-- <div class="col-md-3"><div class="card"><img src="images.jpg" alt=""><div class="card-body"><h5 class="card-title">Bulb 1</h5><p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, alias!</p><button type="button" class="btn btn-primary">Details</button></div></div></div> -->
+            <!-- <div class="modal" id="areeb"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><div class="modal-body"><div class="row"><div class="col-md-6"><img src="images.jpg" alt=""></div><div class="col-md-6"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, impedit.</p></div></div></div><div class="modal-footer"><button type="button" class="btn btn-danger" data-dismiss="modal">Close</button></div></div></div></div></div> -->
+            <!-- <div class="col-md-3"><div class="card"><img src="./pic.jpg" alt=""><div class="card-body"><h5 class="card-title">bulb 1</h5><p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, harum.</p><button type="button"  data-toggle="modal" class="btn btn-primary">Deatils</button></div></div></div> -->
+         <!-- <div class="modal" id="areeb"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><div class="modal-body"><div class="row"><div class="col-md-6"><img src="./images.jpg" alt=""></div><div class="col-md-6"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, saepe!</p></div></div></div><div class="modal-footer"><button type="button" data-dismiss="modal" class="btn btn-danger">Close</button></div></div></div></div></div></div></div> -->
+    </div>
+    </div>
+
+    <img src="" alt="">
+    <script>
+        var obj = [
+            {name:"Bulb 1", des:"loremfjkdhfkhjkhikfhfdhfkdhnfkdnfkfkldhfkl", img:"./images.jpg"},
+            {name:"Bulb 2", des:"loremfjkdhfkhjkhikfhfdhfkdhnfkdnfkfkldhfkl", img:"./img.jpg"},
+            {name:"Bulb 3", des:"loremfjkdhfkhjkhikfhfdhfkdhnfkdnfkfkldhfkl", img:"./img1.jpg"},
+            {name:"Bulb 4", des:"loremfjkdhfkhjkhikfhfdhfkdhnfkdnfkfkldhfkl", img:"./img2.png"},
+        ];
+        var r = document.querySelector(".row");
+        for (var i = 0; i <=obj.length; i++){
+            r.innerHTML += '<div class="col-md-3"><div class="card"><img src="'+ obj[i].img+'" alt=""><div class="card-body"><h5 class="card-title">'+obj[i].name +'</h5><p class="card-text">'+obj[i].des +'</p><button type="button" data-toggle="modal" data-target="#areeb'+i +'" class="btn btn-primary">Details</button><div class="modal" id="areeb'+i+'"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><div class="modal-body"><div class="row"><div class="col-md-6"><img src="'+ obj[i].img+'" alt="" style="width:100%"></div><div class="col-md-6"><p>'+obj[i].des+'</p></div></div></div><div class="modal-footer"><button type="button" class="btn btn-danger" data-dismiss="modal">Close</button></div></div></div></div></div></div></div></div>';
+        }
+        // var obj = [
+        //     {name:"bulb 1", des: "lorem hfgjhfbjhsbfbfjbjhbf", img:"images.jpg"},
+        //     {name:"bulb 2", des: "lorem hfgjhfbjhsbfbfjbjhbf", img:"img.jpg"},
+        //     {name:"bulb 3", des: "lorem hfgjhfbjhsbfbfjbjhbf", img:"img1.jpg"},
+        // ];
+        // var r = document.querySelector(".row");
+        // for (var i = 0; i<=obj.length; i++){
+        //    r.innerHTML += ' <div class="col-md-3"><div class="card"><img src="'+obj[i].img +'" alt=""><div class="card-body"><h5 class="card-title">'+obj[i].name +'</h5><p class="card-text">'+obj[i].des +'</p><button type="button"  data-toggle="modal" data-target="#areeb'+ i+ '" class="btn btn-primary">Deatils</button><div class="modal" id="areeb'+i+'"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><div class="modal-body"><div class="row"><div class="col-md-6"><img src="'+obj[i].img +'" alt=""></div><div class="col-md-6"><p>'+obj[i].des +'</p></div></div></div><div class="modal-footer"><button type="button" data-dismiss="modal" class="btn btn-danger">Close</button></div></div></div></div></div></div></div></div>';
+        // }
+    </script>
+</body>
+</html>

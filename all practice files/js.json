@@ -1,0 +1,6 @@
+{
+    "project": [{"name":"washing machine", "price":"4000", "img":"./image/img1.jpg"},
+                {"name" : "washing machine1", "price":"5000", "img":"./image/images.jpg"},
+                {"name":"washing machine 2", "price":"6000", "img":"./image/img.jpg" }
+]
+}

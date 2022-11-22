@@ -1,0 +1,129 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap-4.2.1-dist/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    <script src="./jquery/jquery-3.5.1.min.js"></script>
+    <script src="./bootstrap-4.2.1-dist/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+        }
+        body{
+            background-color: #f1f4f8;
+            color: #4a4a4a;
+            overflow-x: hidden;
+        }
+        .that{
+            font-weight: 600;
+            padding-top: 100px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 500;
+            color: #696868;
+            margin-bottom: 10px;
+        }
+     
+        .accordion-title .arrow{
+            position: relative;
+            left: 100%;
+            top:-43px;
+            transition: all ease 0.6s 0.5s;
+        }
+        .accordion-item{
+            margin-bottom: 15px;
+        }
+    
+        .accordion-title{
+            background-color: #fff; 
+            position: relative;
+            padding: 24px 80px 24px 30px;
+            border-radius: 16px;
+            box-shadow: 0px 4px 20px rgba(0,0,0,0,0.3);
+            cursor: pointer;
+        }
+        .accordion-desc{
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 0 0 16px 16px;
+            box-sizing: 0px 4px 20px rgba(0,0,0,0.3);
+            border-top: 3px solid rgba(0, 0, 0, 07);
+        }
+        .accordion-item.active .arrow{
+            transform: rotate(80deg);
+        }
+        .accordion-item.active .accordion-title{
+            border-radius: 16px 16px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <section class="that">
+        <div class="container">
+              <div class="accordion">
+    <div class="accordion-item">
+        <div class="accordion-title">
+            <h1 >What does according to?</h1>
+            <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="accordion-desc">
+            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta quo sit natus necessitatibus optio, inventore a doloribus mollitia, expedita atque tenetur sint commodi sapiente corrupti? Hic reiciendis ullam voluptatibus quis officia saepe quasi magnam eligendi, reprehenderit suscipit perferendis optio blanditiis corporis dolores deleniti quam rerum animi repellendus facere molestias, illum dolore mollitia consequuntur eum. Obcaecati nostrum expedita maxime tempore, porro, laboriosam quos ex quia soluta sed quam neque sequi veniam numquam eveniet corrupti! Sequi nostrum, ratione quos voluptas officiis error eos reprehenderit illum! Assumenda dolorum libero repudiandae! Laborum facilis cum facere temporibus. Dignissimos ut rerum in maiores eum? Eum.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-title">
+            <h1 >What does according to?</h1>
+            <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="accordion-desc">
+            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta quo sit natus necessitatibus optio, inventore a doloribus mollitia, expedita atque tenetur sint commodi sapiente corrupti? Hic reiciendis ullam voluptatibus quis officia saepe quasi magnam eligendi, reprehenderit suscipit perferendis optio blanditiis corporis dolores deleniti quam rerum animi repellendus facere molestias, illum dolore mollitia consequuntur eum. Obcaecati nostrum expedita maxime tempore, porro, laboriosam quos ex quia soluta sed quam neque sequi veniam numquam eveniet corrupti! Sequi nostrum, ratione quos voluptas officiis error eos reprehenderit illum! Assumenda dolorum libero repudiandae! Laborum facilis cum facere temporibus. Dignissimos ut rerum in maiores eum? Eum.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-title">
+            <h1>What does according to?</h1>
+            <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="accordion-desc">
+            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta quo sit natus necessitatibus optio, inventore a doloribus mollitia, expedita atque tenetur sint commodi sapiente corrupti? Hic reiciendis ullam voluptatibus quis officia saepe quasi magnam eligendi, reprehenderit suscipit perferendis optio blanditiis corporis dolores deleniti quam rerum animi repellendus facere molestias, illum dolore mollitia consequuntur eum. Obcaecati nostrum expedita maxime tempore, porro, laboriosam quos ex quia soluta sed quam neque sequi veniam numquam eveniet corrupti! Sequi nostrum, ratione quos voluptas officiis error eos reprehenderit illum! Assumenda dolorum libero repudiandae! Laborum facilis cum facere temporibus. Dignissimos ut rerum in maiores eum? Eum.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-title">
+            <h1 >What does according to?</h1>
+            <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="accordion-desc">
+            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta quo sit natus necessitatibus optio, inventore a doloribus mollitia, expedita atque tenetur sint commodi sapiente corrupti? Hic reiciendis ullam voluptatibus quis officia saepe quasi magnam eligendi, reprehenderit suscipit perferendis optio blanditiis corporis dolores deleniti quam rerum animi repellendus facere molestias, illum dolore mollitia consequuntur eum. Obcaecati nostrum expedita maxime tempore, porro, laboriosam quos ex quia soluta sed quam neque sequi veniam numquam eveniet corrupti! Sequi nostrum, ratione quos voluptas officiis error eos reprehenderit illum! Assumenda dolorum libero repudiandae! Laborum facilis cum facere temporibus. Dignissimos ut rerum in maiores eum? Eum.</p>
+        </div>
+    </div>
+  
+ 
+
+
+    
+   </div>
+        </div>
+     
+</section>
+    <script>
+        $(document).ready(function(){
+            $(".accordion-desc").hide();
+            $(".accordion-title").on('click',function(){
+                $(this).next().slideToggle('slow');
+                $(this).parent().toggleClass('active');
+            })
+        })
+    </script>
+</body>
+</html>

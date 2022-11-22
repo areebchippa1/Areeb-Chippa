@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-4.2.1-dist/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    <script src="./jquery/jquery-3.5.1.min.js"></script>
+    <script src="./bootstrap-4.2.1-dist/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center" id="print">
+          
+        </div>
+    </div>
+    <!-- <div class="modal" id="data"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><div class="row"><div class="modal-body"> <div class="col-md-6"> <img src="./image/img.jpg" alt=""></div><div class="col-md-6"><h1 class="card-title">Washing machine</h1><p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, expedita.</p></div><div class="modal-footer"><button type="submit" data-dismiss="modal">close</button></div></div></div></div></div></div></div> -->
+    <!-- <div class="container mt-5">
+        <div class="row justify-content-center" id="print">
+        
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function(){
+            var details = ' ';
+            fetch('js.json')
+            .then((Response) => Response.json())
+            .then(data =>{
+                for(var i in data.project){
+                    details += `<div class="card" style="width: 18rem;">
+              <img src="`+data.project[i].img +`">
+              <div class="card-body">
+                <h5 class="card-title">`+data.project[i].name +`</h5>
+                <p class="card-text">`+data.project[i].age +`</p>
+                <a href="#" class="btn btn-primary">add to cart</a>
+              </div>
+            </div>`
+                }
+                $("#print").html(details);
+            });
+            
+        });
+    </script> -->
+  
+    <script>
+        $(document).ready(function(){
+            var details = " ";
+            fetch("js.json")
+            .then((Response) => Response.json()) 
+            .then(data =>{
+                for(var i in data.project){
+              details +=  `<div class="card"  style="width: 18rem;">
+                <img src="`+data.project[i].img +`">
+                <div class="card-body">
+                  <h5 class="card-title">`+ data.project[i].name+`</h5>
+                  <p class="card-text">`+data.project[i].price+`</p>
+                  <button type="submit" data-toggle="modal" data-target="#data`+i+`" class="btn btn-primary">details</button>
+                </div>
+              </div>  <div class="modal" id="data`+i+`"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><div class="row"><div class="modal-body"> <div class="col-md-6"> <img src="`+data.project[i].img+`" alt=""></div><div class="col-md-6"><h1 class="card-title">`+data.project[i].name+`</h1><p class="card-text">`+ data.project[i].price+`</p></div><div class="modal-footer"><button type="submit" data-dismiss="modal">close</button></div></div></div></div></div></div></div>`
+                }
+                $("#print").html(details);
+            })
+        })
+    </script>
+    
+</body>
+</html>

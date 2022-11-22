@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-4.2.1-dist/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    <script src="./jquery/jquery-3.5.1.min.js"></script>
+    <script src="./bootstrap-4.2.1-dist/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+      <input type="checkbox" name="skills" value="germany">germany
+      <input type="checkbox" name="skills" value="india">india
+      <input type="checkbox" name="skills" value="uk">uk
+      <input type="checkbox" name="skills" value="singapur">singapur
+
+      <br><br>
+      <button type="submit" id="btnsubmit" value="submit">submit</button>
+      <div id="divresult"></div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('#btnsubmit').click(function(){
+                var result = $('input [type = "checkbox"]:checked');
+                if(result.length > 0 ){
+                    var resultString = result.length + " checkbox(s) checked<br>";
+                    result.each(function(){
+                        resultString += $(this).val() + "<br>";
+                    });
+                    $('#divresult').html(resultString);
+                }
+                else{
+                    $('#divresult').html("no checkbox checked");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
