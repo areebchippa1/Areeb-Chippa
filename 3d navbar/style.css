@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    outline: none;
+    transition: all .3s linear;    
+}
+body{
+    height: 12000px;
+    background: #000 !important;
+}
+.header{
+    height: 100vh;
+    width: vw;
+    background-image: url(./images/backgr.jpg );
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+    position: relative;
+    padding: 2rem 2rem;
+}
+.header .m.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all .3s linear !important;
+}
+.header .m{
+    background: rgb(233, 233, 233,0.4) !important;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2%;
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.7);
+    padding: 1rem 2rem !important;
+    align-items: center;
+    /* transition: all 3s linear;   */
+    z-index: 1;
+}
+.header .f-n{
+    font-size: 25px ;
+    color: #fff !important;
+    font-weight: 500; 
+}
+.header .dp{
+    position: relative;
+}
+
+.header .dp .drpdwn{
+    position: absolute;
+    background: #fff !important;
+    backdrop-filter: blur(10px) !important;
+    width: 250px;
+    top: 100%;
+    transform: translateY(50px);
+    opacity: 0;
+    z-index: 11 !important; 
+    visibility: hidden !important;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.7) !important;
+}
+.header .dp .drpdwn a{
+    padding: 0.8rem 1.5rem !important;
+    display: block;
+    color:#000 !important;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    list-style: none;
+}
+.header .dp .drpdwn a:hover{
+    padding-left: 15% !important;
+}
+.header .dp .drpdwn a::before{
+    color: none !important;
+    content: '';
+    position: absolute;
+    background: none;
+    top: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+}
+.header .dp .drpdwn a:hover::before{
+    width: 0%;
+}
+.header .dp:hover .drpdwn{
+    opacity: 1;
+    transform: translateY(25px);
+    visibility: visible !important;
+}
+/* .header .nav-item .drpdwn a{
+
+} */
+.header ul li a{
+    padding: 0.5rem 2rem !important;
+    font-size: 20px;
+    color: #fff !important;
+    font-weight: 400;
+    position: relative;
+    text-transform: capitalize;
+}
+.header ul li a::before{
+    content: "";
+    background: #000;
+    width: 0%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: all .3s linear;
+    border: 100%;
+}
+
+.header ul li a:hover{
+    color: #000 !important;
+}
+
+.header ul li a:hover::before{
+   width: 100%;
+}
+.header .icons .fa{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.header .icons .fa:hover{
+    color: #000;
+}
+.header .text{
+    align-items: center;
+    margin-top: 8rem;
+    position: relative;
+}
+.header .text h3{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff !important;
+}
+.header .text h4{
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+}
+.header .text .s-m{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+}
+.header .text p{
+    font-size: 18px;
+    line-height: 2;
+    color: #fff !important;
+}
+.header .bt button{
+    color: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(8px);
+    background: transparent;
+    padding: 0.8rem 2rem;
+    border: none;
+    outline: none;
+    border: 2px solid #fff;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all .3s linear;
+}
+.header .bt button:hover{
+    background: rgba(255, 255, 255, 0.4);
+    color: #000 !important;
+}
+.header .line{
+    background: rgba(255, 255, 255, 0.5) !important;
+    height: 25rem;
+    backdrop-filter: blur(5px);
+    width: 1%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 5px !important;
+}
+.header .line span{
+    background: #fff !important;
+    height: 60px;
+    width: 120%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+}
+
+.about{
+    position: relative;
+    z-index: -1 !important;
+}
+.about .row{
+    align-items: center;
+}
+.about .row .righ p{
+    line-height: 2;
+    max-width: 500px;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 2.5rem;
+}   
+.about .row .righ button{
+    padding: 0.8rem 2rem;
+    color: #000;
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 2px solid #000;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
